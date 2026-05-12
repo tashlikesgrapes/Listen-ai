@@ -2,37 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources - Listen AI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>body { background-color: #0f172a; color: white; } .card { background-color: #1e293b; border: 1px solid #334155; color: white; }</style>
+    <style>
+      body { background-color: #0f172a; color: white; }
+      .card { background-color: #1e293b; border: 1px solid #334155; color: white; }
+      .hero-section { background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); padding: 75px 0 40px; border-bottom: 1px solid #334155; }
+      .navbar-logo { height: 45px; width: 45px; object-fit: contain; margin-right: 12px; }
+      .nav-link { color: rgba(255, 255, 255, 0.7) !important; transition: 0.2s; }
+      .nav-link:hover, .nav-link.active { color: #fff !important; }
+      .resource-list li { margin-bottom: 0.9rem; }
+    </style>
 </head>
 <body>
-    <div class="container py-5">
-        <h1 class="display-5 fw-bold mb-4">Support Resources</h1>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 p-4">
-                    <h3>Crisis Help</h3>
-                    <p class="opacity-75">Immediate support for difficult moments.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm mt-auto">View Numbers</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 p-4">
-                    <h3>Mindfulness</h3>
-                    <p class="opacity-75">Exercises to help you stay grounded.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Start Guide</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 p-4">
-                    <h3>Local Help</h3>
-                    <p class="opacity-75">Find professional support in your area.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Search Directory</a>
-                </div>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+        <img src="https://r2.erweima.ai/i/R0lsFxe5Rau0Juo6XOSxkg.png" alt="Listen AI Logo" class="navbar-logo">
+        Listen AI
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+          <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </nav>
+
+  <header class="hero-section text-center text-white">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-3">Support Resources</h1>
+      <p class="lead opacity-75 mb-0">Tools, guides, and recommended reads to help you feel grounded, calm, and supported.</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 d-flex flex-column">
+            <h3>Crisis Help</h3>
+            <p class="opacity-75 mb-4">Immediate support options for moments when you need help right now.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-auto">View Numbers</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 d-flex flex-column">
+            <h3>Mindfulness</h3>
+            <p class="opacity-75 mb-4">Quick grounding exercises to help you pause and breathe.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Start Guide</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 d-flex flex-column">
+            <h3>Local Help</h3>
+            <p class="opacity-75 mb-4">Find therapists, support groups, and community services near you.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Search Directory</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 d-flex flex-column">
+            <h3>Self-Care Ideas</h3>
+            <p class="opacity-75 mb-4">Simple activities to build calm, rest, and recharge into your day.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Explore Tips</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 d-flex flex-column">
+            <h3>Recommended Articles</h3>
+            <p class="opacity-75 mb-4">Short reads on coping, resilience, and emotional balance.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 d-flex flex-column">
+            <h3>Wellness Tools</h3>
+            <p class="opacity-75 mb-4">Apps and exercises designed to support habits, mood, and sleep.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Find Tools</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="card p-4 h-100">
+            <h2 class="h4 fw-bold mb-3">How to use these resources</h2>
+            <p class="opacity-75">Pick the category that matches how you feel today: urgent support, quiet reflection, or daily care. Come back any time when you need ideas or a fresh way to feel better.</p>
+            <ul class="resource-list opacity-75 mt-4">
+              <li>Need calm? Try a mindfulness exercise.</li>
+              <li>Feeling overwhelmed? Use the crisis contacts.</li>
+              <li>Want structure? Explore wellness tools.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card p-4 h-100">
+            <h2 class="h4 fw-bold mb-3">Quick links</h2>
+            <ul class="resource-list">
+              <li><a href="#" class="text-decoration-none text-white">5-minute grounding practice</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Create a safety plan</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Journaling prompts</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Build a supportive routine</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card p-4">
+      <h2 class="h4 fw-bold mb-3">A gentle reminder</h2>
+      <p class="opacity-75 mb-0">Resources are tools, not rules. Use what helps, leave what doesn't, and know that it's okay to ask for support when you want to.</p>
+    </section>
+  </main>
+
+  <footer class="text-center py-5 border-top border-secondary opacity-50">
+      <p class="small mb-0">© 2026 Listen AI</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
