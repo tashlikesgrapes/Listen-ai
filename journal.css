@@ -1,0 +1,107 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  background-color: #1b0f33;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Navigation Styles */
+.navbar-logo {
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  transition: 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+
+/* Button Styles */
+.btn-main {
+  background-color: #4f46e5;
+  border: none;
+  padding: 14px 32px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.section-card {
+  background-color: #25163f;
+  border: 1px solid #5d3aa5;
+  border-radius: 1rem;
+}
+
+/* Journal Page Specific Styles */
+.journal-entry {
+  background-color: #2f1c49;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.journal-entry:hover {
+  transform: translateX(5px);
+  border-color: rgba(168, 112, 255, 0.6);
+}
+
+.entry-date {
+  color: #a870ff;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.entry-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.entry-content {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.entry-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.entry-tag {
+  background-color: #4f46e5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}

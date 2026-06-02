@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Listen AI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body { background-color: #0f172a; color: white; }
-      .form-control { background-color: #1e293b; border: 1px solid #334155; color: white; }
-      .hero-section { background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); padding: 70px 0 40px; border-bottom: 1px solid #334155; }
-      .navbar-logo { height: 45px; width: 45px; object-fit: contain; margin-right: 12px; }
-      .nav-link { color: rgba(255, 255, 255, 0.7) !important; transition: 0.2s; }
-      .nav-link:hover, .nav-link.active { color: #fff !important; }
-      .contact-detail { background-color: #111827; border: 1px solid #334155; border-radius: 1rem; }
-    </style>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary" aria-label="Main navigation">
@@ -47,25 +39,25 @@
   <main class="container py-5">
     <div class="row gy-4">
       <div class="col-lg-6">
-        <div class="card bg-dark border-secondary p-4 h-100">
+        <div class="card contact-card border-secondary p-4 h-100">
           <h2 class="h4 fw-bold mb-3">Send us a message</h2>
           <p class="opacity-75 mb-4">Use the form below to reach out and we’ll get back to you as soon as possible.</p>
-          <form>
+          <form action="mailto:support@listenai.com" method="POST" enctype="text/plain">
             <div class="mb-3">
-              <label class="form-label opacity-75">Your Name</label>
-              <input type="text" class="form-control" placeholder="Name">
+              <label for="contactName" class="form-label opacity-75">Your Name</label>
+              <input id="contactName" name="name" type="text" class="form-control" placeholder="Name" required>
             </div>
             <div class="mb-3">
-              <label class="form-label opacity-75">Email Address</label>
-              <input type="email" class="form-control" placeholder="Email">
+              <label for="contactEmail" class="form-label opacity-75">Email Address</label>
+              <input id="contactEmail" name="email" type="email" class="form-control" placeholder="Email" required>
             </div>
             <div class="mb-3">
-              <label class="form-label opacity-75">Subject</label>
-              <input type="text" class="form-control" placeholder="Subject">
+              <label for="contactSubject" class="form-label opacity-75">Subject</label>
+              <input id="contactSubject" name="subject" type="text" class="form-control" placeholder="Subject" required>
             </div>
             <div class="mb-3">
-              <label class="form-label opacity-75">Message</label>
-              <textarea class="form-control" rows="5" placeholder="Tell us how we can help"></textarea>
+              <label for="contactMessage" class="form-label opacity-75">Message</label>
+              <textarea id="contactMessage" name="message" class="form-control" rows="5" placeholder="Tell us how we can help" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Send Message</button>
           </form>

@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: white;
-  background-color: #0f172a;
+  background-color: #1b0f33;
 }
 
 main {
@@ -19,21 +19,21 @@ h1 {
 }
 
 .hero-section {
-  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(180deg, #2d0f4f 0%, #1b0f33 100%);
   padding: 100px 0;
-  border-bottom: 1px solid #334155;
+  border-bottom: 1px solid #452f6b;
 }
 
 .custom-card {
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background-color: #2f1c49;
+  border: 1px solid #5d3aa5;
   border-radius: 12px;
   transition: transform 0.2s;
 }
 
 .section-card {
-  background-color: #111827;
-  border: 1px solid #334155;
+  background-color: #25163f;
+  border: 1px solid #5d3aa5;
   border-radius: 1rem;
 }
 
@@ -73,4 +73,88 @@ h1 {
 .nav-link:hover,
 .nav-link.active {
   color: #fff !important;
+}
+
+.card {
+  background-color: #2f1c49;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  border-radius: 1rem;
+}
+
+.form-control,
+.form-select {
+  background-color: #2d174d;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  color: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(168, 112, 255, 0.8);
+  box-shadow: 0 0 0 0.2rem rgba(168, 112, 255, 0.22);
+}
+
+.contact-card {
+  background-color: #2d174d;
+  border-color: rgba(148, 103, 255, 0.35);
+}
+
+.contact-detail {
+  background-color: #25163f;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  border-radius: 1rem;
+}
+
+.journal-card {
+  background-color: #25163f;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  border-radius: 1rem;
+}
+
+.entry-list .entry-card {
+  background-color: #2f1c49;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  border-radius: 1rem;
+}
+
+.entry-list .entry-card p {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.btn-outline-primary {
+  color: #e9d5ff;
+  border-color: #7c3aed;
+}
+
+.btn-outline-primary:hover {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #7c3aed !important;
+  border-color: #7c3aed !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #6d28d9 !important;
+  border-color: #6d28d9 !important;
+}
+
+.bg-dark {
+  background-color: #29153f !important;
+}
+
+.border-secondary {
+  border-color: #6e4dd8 !important;
+}
+
+.resource-list a {
+  color: #e9d5ff;
 }
