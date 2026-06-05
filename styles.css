@@ -99,6 +99,19 @@ h1 {
   border-color: rgba(148, 103, 255, 0.35);
 }
 
+/* Index Page Specific Styles */
+.feature-card {
+  background-color: #2f1c49;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
 .contact-detail {
   background-color: #25163f;
   border: 1px solid rgba(148, 103, 255, 0.35);
@@ -157,4 +170,17 @@ h1 {
 
 .resource-list a {
   color: #e9d5ff;
+}
+
+/* Index Page Specific Styles */
+.feature-card {
+  background-color: #2f1c49;
+  border: 1px solid rgba(148, 103, 255, 0.35);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
 }
