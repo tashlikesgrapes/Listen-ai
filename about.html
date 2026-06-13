@@ -1,222 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Listen AI</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="about.css" />
-    <style>
-      body {
-        background-color: #1b0f33;
-        color: white;
-        font-family: sans-serif;
-      }
 
-      .hero-section {
-        background: linear-gradient(180deg, #2d0f4f 0%, #1b0f33 100%);
-        padding: 100px 0 60px;
-        border-bottom: 1px solid #452f6b;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Listen AI</title>
 
-      .section-card {
-        background-color: #25163f;
-        border: 1px solid #5d3aa5;
-        border-radius: 1rem;
-      }
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://r2.erweima.ai/i/R0lsFxe5Rau0Juo6XOSxkg.png" />
 
-      .btn-main {
-        background-color: #4f46e5;
-        border: none;
-        padding: 14px 32px;
-        font-weight: bold;
-        border-radius: 8px;
-        transition: 0.3s;
-      }
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-      .btn-main:hover {
-        background-color: #4338ca;
-        transform: translateY(-2px);
-      }
+  <!-- Your external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      .navbar-logo {
-        height: 45px;
-        width: 45px;
-        object-fit: contain;
-        margin-right: 12px;
-      }
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+        <img src="https://r2.erweima.ai/i/R0lsFxe5Rau0Juo6XOSxkg.png" alt="Listen AI Logo" class="navbar-logo" />
+        Listen AI
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      .nav-link {
-        color: rgba(255, 255, 255, 0.7) !important;
-        transition: 0.2s;
-      }
+  <!-- Hero Section -->
+  <header class="hero-section text-center bg-light py-5">
+    <div class="container">
+      <img src="https://r2.erweima.ai/i/R0lsFxe5Rau0Juo6XOSxkg.png" alt="Listen AI Logo" class="hero-logo mb-4" />
+      <h1 class="display-3 fw-bold mb-3">About Listen AI</h1>
+      <p class="lead fs-4 opacity-75 mb-4">A caring digital space where your voice is always welcome.</p>
+    </div>
+  </header>
 
-      .nav-link:hover,
-      .nav-link.active {
-        color: #fff !important;
-      }
-      .bg-dark { background-color: #29153f !important; }
-      .border-secondary { border-color: #6e4dd8 !important; }
-    </style>
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary"
-      aria-label="Main navigation"
-    >
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-          <img
-            src="https://r2.erweima.ai/i/R0lsFxe5Rau0Juo6XOSxkg.png"
-            alt="Listen AI Logo"
-            class="navbar-logo"
-          />
-          Listen AI
-        </a>
+  <!-- About Content -->
+  <section class="container py-5">
+    <!-- Our Purpose -->
+    <div class="mb-5">
+      <h2 class="fw-bold mb-3 text-center">Our Purpose</h2>
+      <p class="opacity-75 mb-3 text-center">
+        Listen AI exists to create a caring digital space for anyone who needs to share what’s on their mind. We believe better days begin with being heard.
+      </p>
+      <p class="opacity-75 mb-0 text-center">
+        Whether you’re processing a tough moment or just want to reflect, our goal is to make support simple, secure, and judgment-free.
+      </p>
+    </div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="journal.html">Journal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+    <!-- Support Features with improved colors (styles in external CSS) -->
+    <div class="row g-4 text-center support-section">
+      <div class="col-md-3">
+        <div class="card support-card p-4 h-100 border-primary" style="background-color: #d0e8ff;">
+          <h3 class="h5 fw-bold mb-3 text-primary">Private</h3>
+          <p class="small mb-0 opacity-75 text-dark">
+            Your thoughts stay between you and the experience.
+          </p>
         </div>
       </div>
-    </nav>
-
-    <main>
-      <header class="hero-section text-center text-white">
-        <div class="container">
-          <h1 class="display-4 fw-bold mb-3">About Listen AI</h1>
-          <p class="lead opacity-75 mb-4">
-            A calm, confidential place where your voice is always welcome.
-          </p>
-          <a href="chat.html" class="btn btn-primary btn-main">
-            Start a Conversation
-          </a>
-        </div>
-      </header>
-
-      <section class="container py-5">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <div class="section-card p-4">
-              <h2 class="fw-bold mb-3">Our Purpose</h2>
-              <p class="opacity-75 mb-3">
-                Listen AI exists to create a caring digital space for anyone who needs to share what’s on their mind. We believe better days begin with being heard.
-              </p>
-              <p class="opacity-75 mb-0">
-                Whether you’re processing a tough moment or just want to reflect, our goal is to make support simple, secure, and judgment-free.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <div class="section-card p-4 h-100">
-                  <h3 class="h6 fw-bold">Private</h3>
-                  <p class="small opacity-75 mb-0">
-                    Your thoughts stay between you and the experience.
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="section-card p-4 h-100">
-                  <h3 class="h6 fw-bold">Available</h3>
-                  <p class="small opacity-75 mb-0">
-                    Easy access whenever you need a listening moment.
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="section-card p-4 h-100">
-                  <h3 class="h6 fw-bold">Supportive</h3>
-                  <p class="small opacity-75 mb-0">
-                    No judgment, just space to think and reflect.
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="section-card p-4 h-100">
-                  <h3 class="h6 fw-bold">Simple</h3>
-                  <p class="small opacity-75 mb-0">
-                    Designed to feel calm, clear, and easy to use.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="container py-5">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">What We Believe In</h2>
-          <p class="opacity-75 mb-0">
-            Every voice matters. Every feeling is valid. Listening is the first step toward growth.
+      <div class="col-md-3">
+        <div class="card support-card p-4 h-100 border-success" style="background-color: #d4edda;">
+          <h3 class="h5 fw-bold mb-3 text-success">Available</h3>
+          <p class="small mb-0 opacity-75 text-dark">
+            Easy access whenever you need a listening moment.
           </p>
         </div>
-
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="section-card p-4 h-100">
-              <h3 class="h5 fw-bold">Safe Space</h3>
-              <p class="small opacity-75 mb-0">
-                A calm environment where you can explore your thoughts without pressure.
-              </p>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="section-card p-4 h-100">
-              <h3 class="h5 fw-bold">Clarity</h3>
-              <p class="small opacity-75 mb-0">
-                Sometimes speaking aloud helps bring a clearer perspective.
-              </p>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="section-card p-4 h-100">
-              <h3 class="h5 fw-bold">Compassion</h3>
-              <p class="small opacity-75 mb-0">
-                We honor your experience with kindness and care.
-              </p>
-            </article>
-          </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card support-card p-4 h-100 border-info" style="background-color: #d1ecf1;">
+          <h3 class="h5 fw-bold mb-3 text-info">Supportive</h3>
+          <p class="small mb-0 opacity-75 text-dark">
+            No judgment, just space to think and reflect.
+          </p>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="col-md-3">
+        <div class="card support-card p-4 h-100 border-warning" style="background-color: #fff3cd;">
+          <h3 class="h5 fw-bold mb-3 text-warning">Simple</h3>
+          <p class="small mb-0 opacity-75 text-dark">
+            Designed to feel calm, clear, and easy to use.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="text-center py-5 border-top border-secondary opacity-50">
-      <p class="small mb-0">© 2026 Listen AI</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="text-center py-5 border-top border-secondary opacity-50">
+    <p class="small mb-0">© 2026 Listen AI</p>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Listen AI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Listen AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary" aria-label="Main navigation">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-        <img src="https://r2.erweima.ai/i/R0lsFxe5Rau0Juo6XOSxkg.png" alt="Listen AI Logo" class="navbar-logo">
+        <img src="https://r2.erweima.ai/i/R0lsFxe5Rau0Juo6XOSxkg.png" alt="Listen AI Logo" class="navbar-logo" />
         Listen AI
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,48 +30,51 @@
     </div>
   </nav>
 
-  <header class="hero-section text-center text-white">
+  <!-- Page Header -->
+  <section class="py-5 bg-dark text-white text-center">
     <div class="container">
       <h1 class="display-5 fw-bold mb-3">Contact Listen AI</h1>
       <p class="lead opacity-75 mb-0">Questions, feedback, or support requests? We’re here to listen.</p>
     </div>
-  </header>
+  </section>
 
-  <main class="container py-5">
-    <div class="row gy-4">
+  <!-- Main Content: Contact form and info side by side -->
+  <section class="py-5 container">
+    <div class="row g-4">
+      <!-- Contact Form -->
       <div class="col-lg-6">
-        <div class="card contact-card border-secondary p-4 h-100">
+        <div class="card border-secondary p-4 h-100">
           <h2 class="h4 fw-bold mb-3">Send us a message</h2>
           <p class="opacity-75 mb-4">Use the form below to reach out and we’ll get back to you as soon as possible.</p>
           <form action="mailto:support@listenai.com" method="POST" enctype="text/plain">
             <div class="mb-3">
               <label for="contactName" class="form-label opacity-75">Your Name</label>
-              <input id="contactName" name="name" type="text" class="form-control" placeholder="Name" required>
+              <input type="text" class="form-control" id="contactName" name="name" placeholder="Name" required>
             </div>
             <div class="mb-3">
               <label for="contactEmail" class="form-label opacity-75">Email Address</label>
-              <input id="contactEmail" name="email" type="email" class="form-control" placeholder="Email" required>
+              <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Email" required>
             </div>
             <div class="mb-3">
               <label for="contactSubject" class="form-label opacity-75">Subject</label>
-              <input id="contactSubject" name="subject" type="text" class="form-control" placeholder="Subject" required>
+              <input type="text" class="form-control" id="contactSubject" name="subject" placeholder="Subject" required>
             </div>
             <div class="mb-3">
               <label for="contactMessage" class="form-label opacity-75">Message</label>
-              <textarea id="contactMessage" name="message" class="form-control" rows="5" placeholder="Tell us how we can help" required></textarea>
+              <textarea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Tell us how we can help" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Send Message</button>
           </form>
         </div>
       </div>
-
+      <!-- Contact Details & Quick Help -->
       <div class="col-lg-6">
-        <div class="contact-detail p-4 h-100 d-flex flex-column justify-content-between">
+        <div class="p-4 h-100 d-flex flex-column justify-content-between bg-light border">
           <div>
             <h2 class="h4 fw-bold mb-3">Need a faster answer?</h2>
             <p class="opacity-75 mb-4">Here are some quick ways to get help and learn more about Listen AI.</p>
             <ul class="list-unstyled opacity-75 mb-4">
-              <li class="mb-3"><strong>Email:</strong> <a href="mailto:support@listenai.com" class="text-decoration-none text-white">support@listenai.com</a></li>
+              <li class="mb-3"><strong>Email:</strong> <a href="mailto:support@listenai.com" class="text-decoration-none">support@listenai.com</a></li>
               <li class="mb-3"><strong>Support hours:</strong> Monday–Friday, 9am–6pm PT</li>
               <li class="mb-3"><strong>Response time:</strong> usually within 24 hours</li>
               <li class="mb-3"><strong>Privacy:</strong> Your message stays private and secure.</li>
@@ -89,9 +93,10 @@
         </div>
       </div>
     </div>
-  </main>
+  </section>
 
-  <footer class="text-center py-5 border-top border-secondary opacity-50">
+  <!-- Footer -->
+  <footer class="text-center py-4 border-top border-secondary opacity-50">
     <p class="small mb-0">© 2026 Listen AI</p>
   </footer>
 

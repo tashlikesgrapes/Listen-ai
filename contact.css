@@ -6,17 +6,15 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  color: white;
-  background-color: #1b0f33;
+  background-color: #1b0f33; /* Dark background similar to your original */
+  color: #000; /* Set all default text to black for readability */
 }
 
-main {
-  padding: 1rem;
-}
-
+/* Headings */
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+  color: #000; /* Black text for headings */
 }
 
 /* Navigation Styles */
@@ -28,23 +26,24 @@ h1 {
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(0, 0, 0, 0.7) !important; /* Darker links to match black text */
   transition: 0.2s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #fff !important;
+  color: #000 !important; /* Fully black on hover */
 }
 
-/* Button Styles */
+/* Buttons */
 .btn-main {
-  background-color: #4f46e5;
+  background-color: #4f46e5; /* Purple button background */
   border: none;
   padding: 14px 32px;
   font-weight: bold;
   border-radius: 8px;
   transition: 0.3s;
+  color: #fff; /* White text for contrast */
 }
 
 .btn-main:hover {
@@ -52,12 +51,12 @@ h1 {
   transform: translateY(-2px);
 }
 
-/* Form Styles */
+/* Form Inputs */
 .form-control,
 .form-select {
-  background-color: #2d174d;
+  background-color: #2d174d; /* Purple background for inputs */
   border: 1px solid rgba(148, 103, 255, 0.35);
-  color: white;
+  color: #000; /* Text inside inputs is now black */
 }
 
 .form-control:focus,
@@ -66,23 +65,27 @@ h1 {
   box-shadow: 0 0 0 0.2rem rgba(168, 112, 255, 0.22);
 }
 
-/* Contact Page Specific Styles */
+/* Contact Card Styles */
 .contact-card {
-  background-color: #2d174d;
+  background-color: #2d174d; /* Purple background */
   border: 1px solid rgba(148, 103, 255, 0.35);
   border-radius: 1rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+  color: #000; /* Text inside cards is black */
 }
 
+/* Contact Form Container */
 .contact-form {
-  background-color: #2f1c49;
+  background-color: #2f1c49; /* Slightly lighter purple for form area */
   border: 1px solid #5d3aa5;
   border-radius: 12px;
   padding: 2rem;
   max-width: 600px;
+  color: #000; /* Text inside form is black */
 }
 
+/* Contact info boxes */
 .contact-info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -91,8 +94,9 @@ h1 {
 }
 
 .info-item {
-  background-color: #25163f;
+  background-color: #25163f; /* Dark purple for info boxes */
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid #4f46e5;
+  border-left: 4px solid #4f46e5; /* blue accent border */
+  color: #000; /* black text for info boxes */
 }
